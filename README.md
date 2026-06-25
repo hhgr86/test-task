@@ -5,12 +5,6 @@
 1. **Моделирование процесса выдачи IT-оборудования** в нотации BPMN 2.0.
 2. **Формулировка требований** к функциональности публикации товара на маркетплейсе (User Story, Use Case, диаграммы).
 
-## Структура
-
-- [`docs/task1-equipment-request/`](docs/task1-equipment-request/) — BPMN-модель и выявленные противоречия.
-- [`docs/task2-publish-product/`](docs/task2-publish-product/) — требования к фиче публикации товара.
-
-## Артефакты
 
 ### Задача 1
 - [BPMN 2.0 модель](docs/task1-equipment-request/process.bpmn)
