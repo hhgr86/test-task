@@ -13,7 +13,7 @@
 ## BPMN-модель
 
 Файл: [`process.xml`](process.xml)  
-Скриншот: [`process.xml`](process.xml)
+Скриншот: [`process.png`](process.png)
 
 ### Пулы (участники)
 
