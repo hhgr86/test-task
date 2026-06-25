@@ -7,8 +7,7 @@
 
 
 ### Задача 1
-- [BPMN 2.0 модель](docs/task1-equipment-request/process.bpmn)
-- [Скриншот модели](docs/task1-equipment-request/process.png)
+- [Задача по моделе в нотации BPMN 2.0](docs/README.md)
 
 ### Задача 2
 - [User Story](docs/task2-publish-product/user-story.md)
