@@ -41,3 +41,4 @@
     - 409 (Пользователь уже существует)
 
 [Untitled diagram-2026-06-27-122438.png](Untitled diagram-2026-06-27-122438.png)
+[Untitled diagram-2026-06-27-122438.png](Untitled diagram-2026-06-27-122438.png)
