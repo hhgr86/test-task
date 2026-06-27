@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: User Registration API
+  version: 1.0.0
+  description: API для регистрации пользователей в книжном магазине
+paths:
+  /api/v1/user/register:
+    post:
+      summary: Регистрация пользователя
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [firstName, lastName, userName, password, recaptchaToken]
+              properties:
+                firstName: {type: string}
+                lastName: {type: string}
+                userName: {type: string}
+                password: {type: string}
+                recaptchaToken: {type: string}
+      responses:
+        '201':
+          description: Успешная регистрация
+        '400':
+          description: Ошибка валидации (неверный пароль или капча)
+        '409':
+          description: Пользователь с таким логином уже существует
