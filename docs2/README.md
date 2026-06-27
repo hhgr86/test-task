@@ -23,6 +23,6 @@
 
 ## Спецификация
 Полная техническая спецификация API в формате OpenAPI доступна в файле:
-[register-api.yaml](docs2/register-api.yaml)
+[register-api.yaml](register-api.yaml)
 
 
