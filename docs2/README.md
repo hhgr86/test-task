@@ -40,5 +40,16 @@
     - 400 (Ошибка валидации/капчи)
     - 409 (Пользователь уже существует)
 
-[Untitled diagram-2026-06-27-122438.png](Untitled diagram-2026-06-27-122438.png)
-[Untitled diagram-2026-06-27-122438.png](Untitled diagram-2026-06-27-122438.png)
+```mermaid
+graph TD
+    A[Start: POST /register] --> B{Валидация данных?}
+    B -- Ошибка --> C[400 Bad Request]
+    B -- ОК --> D{reCAPTCHA валидна?}
+    D -- Нет --> E[400: Please verify reCaptcha]
+    D -- Да --> F{Пароль соответствует правилам?}
+    F -- Нет --> G[400: Password format error]
+    F -- Да --> H{Пользователь существует?}
+    H -- Да --> I[409: User exists]
+    H -- Нет --> J[Хеширование пароля]
+    J --> K[INSERT в базу данных]
+    K --> L[201 Created]
